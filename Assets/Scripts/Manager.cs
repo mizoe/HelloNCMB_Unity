@@ -33,8 +33,9 @@ public class Manager : MonoBehaviour
 		}
 		
 		// ログアウト完了してたらログインメニューに戻る
-		if( FindObjectOfType<UserAuth>().currentPlayer() == null )
-			Application.LoadLevel("Login");   
+		if (FindObjectOfType<UserAuth> ().currentPlayer () == null) {
+			Application.LoadLevel ("Login");   
+		}
 	}
 	
 	void GameStart() {
